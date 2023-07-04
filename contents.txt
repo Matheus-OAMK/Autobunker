@@ -14,8 +14,8 @@ Jarrunesteen vaihto.
 
 2) Perushuolto 
 Moottoriöljyn vaihto, 
-öljyn suodattimen vaihto, 
-Ilma suodattimien vaihto, 
+Öljynsuodattimen vaihto, 
+Ilmasuodattimien vaihto, 
 Jäähdytysnesteen vaihto,
 Sytytyspuolien vaihto,
 Sytytystulppien vaihto, 
@@ -30,8 +30,8 @@ Vanteiden tasapainotus ,
 Renkaiden kausisäilytys,
 
 5) OBD mittaus
-Vikakoodijen Luku 
-Vikakoodijen poisto
+Vikakoodien Luku 
+Vikakoodien poisto
     
 6) auton pesu
 Auton pesu ulkoa 
