@@ -39,8 +39,8 @@ SELECT 'Perushuolto', sub_service
 FROM (
   VALUES 
     ('Mootoriöljyn vaihto'),
-    ('Öljyn suodattimen vaihto'),
-    ('Ilma suodattimien vaihto'),
+    ('Öljynsuodattimien vaihto'),
+    ('Ilmansuodattimien vaihto'),
     ('Jäähdytysnesteen vaihto'),
     ('Sytytyspuolien vaihto'),
     ('Sytytystulppien vaihto')
@@ -73,8 +73,8 @@ INSERT INTO sub_services (service, sub_service)
 SELECT 'OBD Mittaus', sub_service
 FROM (
   VALUES 
-    ('Vikakoodijen Luku'),
-    ('Vikakoodijen poisto')
+    ('Vikakoodien Luku'),
+    ('Vikakoodien poisto')
 ) AS sub_service_values (sub_service);
 
 
