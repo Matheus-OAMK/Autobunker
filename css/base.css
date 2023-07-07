@@ -11,4 +11,110 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
+  background-image: url(../img/background.webp);
+}
+
+.services {
+  background-repeat: repeat-y;
+  margin: 0 auto;
+  margin-top: 5rem;
+  max-width: 140rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 3.5rem;
+  justify-items: center;
+  padding: 0 2rem;
+}
+
+.card {
+  -webkit-perspective: 150rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 70rem;
+  width: 40rem;
+}
+
+.card__side {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: 0 0 2rem #000;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+.card__side--front {
+  background-size: 100%;
+  padding-top: 1.2rem;
+}
+
+.card__side--back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background-size: 100%;
+  padding-top: 5rem;
+}
+
+.rotated .card__side--front {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.rotated .card__side--back {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+.service-name {
+  display: inline-block;
+  font-size: 4.8rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: #e6892b;
+  text-shadow: 0 0 1rem #000;
+}
+
+.card__cta {
+  height: 10rem;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.btn-flip {
+  height: 10rem;
+  width: 10rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 4rem rgba(230, 137, 43, 0.9);
+  border-radius: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-icon {
+  height: 6rem;
+  width: 6rem;
+  color: #e6892b;
+}
+
+.subservices-list {
+  font-size: 2.8rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #d7ba9c;
+  display: grid;
+  row-gap: 1.6rem;
 }
