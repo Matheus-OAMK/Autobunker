@@ -63,6 +63,43 @@
           </div>
         </div>
       </template>
+
+ <div class="card" onclick="cardRotate(this)">
+          <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(../img/front/card_1.webp)" -->
+          <div
+            class="card__side card__side--front"
+            card-data-front-image
+            style="background-image: url('../img/front/Jarrujen huolto.webp')"
+          >
+            <span class="service-name" card-data-service-name>Jarrujen huolto</span>
+            <div class="card__cta">
+              <div class="btn-flip">
+                <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(../img/back/card_1.webp)" -->
+          <div
+            class="card__side card__side--back"
+            card-data-back-image
+            style="background-image: url(../img/back/Jarrujen_huolto.webp)"
+          >
+            <ul class="subservices-list" card-data-subservices-list>
+              <!-- HERE ARE JUST LIST ELEMENTS: <li>subservice name</li> -->
+              <li>subservice name</li>
+              <li>subservice name</li>
+              <li>subservice name</li>
+            </ul>
+            <div class="card__cta">
+              <div class="btn-flip">
+                <ion-icon name="sync-outline" class="flip-icon"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+
     </section>
     <script>
       // FUNCTION TO ROTATE CARDS

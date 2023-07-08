@@ -1,1 +1,5 @@
+
 GET http://localhost:3001/sub-services/Perushuolto
+
+###
+GET http://localhost:3001/services
