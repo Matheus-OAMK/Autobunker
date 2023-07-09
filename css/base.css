@@ -22,7 +22,7 @@ body::after {
   left: 0;
   bottom: 0;
   right: 0;
-  position: absolute;
+  position: fixed;
   z-index: -1;
   opacity: 0.1;
 }
@@ -198,7 +198,7 @@ body::after {
   max-width: 50rem;
   text-align: center;
   align-items: center;
-  row-gap: 1rem;
+  row-gap: 1.7rem;
 }
 
 .contacts-heading {
@@ -277,4 +277,23 @@ body::after {
 
 .phone {
   background-color: #09c14c;
+}
+
+.map-section {
+  margin: 0 auto;
+  margin-top: 10rem;
+  max-width: 140rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10rem;
+  padding: 0 5rem;
+  row-gap: 1.7rem;
+}
+
+iframe {
+  width: 100%;
+  height: 50rem;
+  filter: invert(90%) hue-rotate(180deg) brightness(1.1) saturate(1.3);
 }
