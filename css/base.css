@@ -11,7 +11,21 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
-  background-image: url(../img/background.webp);
+  
+  
+  background-color:BLACK
+}
+
+body::after {
+  content: "";
+  background-image: url(../img/noise.webp);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.1;
 }
 
 .services {
