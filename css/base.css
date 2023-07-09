@@ -11,7 +11,140 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
-  background-image: url(../img/background.webp);
+  background-image: url(../img/bg.jpg);
+  padding: 3rem;
+}
+
+.hero {
+  height: 90vh;
+  background-image: url(../img/hero.webp);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  filter: drop-shadow(rgba(230, 137, 43, 0.4) 0 0 1rem);
+  border-radius: 0.5rem;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-logo {
+  background-image: url(../img/logo.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50rem;
+  height: 50rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  filter: drop-shadow(black 0 0 3rem);
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.05);
+    filter: drop-shadow(rgba(230, 137, 43, 0.7) 0 0 8rem);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.hero-slogan {
+  font-size: 3.6rem;
+  color: #d7ba9c;
+  font-weight: 400;
+  letter-spacing: 0.7rem;
+  text-shadow: black 0 0 1rem;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.hero-services-cta {
+  font-size: 3.6rem;
+  color: #d7ba9c;
+  font-weight: 400;
+  letter-spacing: 0.7rem;
+  text-shadow: black 0 0 1rem;
+  position: absolute;
+  top: 90%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.hero-down-arrow {
+  background-image: url(../img/down-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 130%;
+  left: 50.2%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  filter: drop-shadow(black 0 0 1rem);
+}
+
+.hero-services-cta:hover {
+  cursor: pointer;
+  transform: translate(-50%, -50%) scale(1.1);
+  text-shadow: rgba(230, 137, 43, 0.9) 0 0 2rem;
+}
+
+.hero-services-cta:active {
+  transform: translate(-50%, -50%) scale(1.05);
+  text-shadow: rgba(230, 137, 43, 0.9) 0 0 2rem;
+}
+
+.hero-contacts {
+  font-size: 2.6rem;
+  color: #d7ba9c;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  text-shadow: black 0 0 1rem;
+  position: absolute;
+  top: 5%;
+  right: -3.3%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.hero-contacts:hover {
+  cursor: pointer;
+  transform: translate(-50%, -50%) scale(1.1);
+  text-shadow: rgba(230, 137, 43, 0.9) 0 0 2rem;
+}
+
+.hero-contacts:active {
+  transform: translate(-50%, -50%) scale(1.05);
+  text-shadow: rgba(230, 137, 43, 0.9) 0 0 2rem;
 }
 
 .services {
