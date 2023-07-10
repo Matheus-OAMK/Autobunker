@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -14,6 +15,8 @@ body {
   background-color: BLACK;
   padding: 3rem;
 }
+
+
 
 body::after {
   content: "";
@@ -125,6 +128,8 @@ body::after {
   z-index: 1;
   transition: all 0.3s ease;
 }
+
+
 
 .hero-down-arrow {
   background-image: url(../img/down-arrow.png);
