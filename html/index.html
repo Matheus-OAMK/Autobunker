@@ -35,14 +35,14 @@
         <div class="hero-logo"></div>
         <span class="hero-slogan">LAAJA HUOLTO</span>
       </div>
-      <span class="hero-services-cta"
+      <a href="#services" class="hero-services-cta"
         >PALVELUT
         <div class="hero-down-arrow"></div>
-      </span>
-      <span class="hero-contacts">Yhteystiedot</span>
+      </a>
+      <a href="contacts.html" class="hero-contacts">Yhteystiedot</a>
     </header>
 
-    <section class="services">
+    <section class="services" id="services">
       <template data-card-template>
         <div class="card" onclick="cardRotate(this)">
           <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(../img/front/card_1.webp)" -->
@@ -116,13 +116,19 @@
 
     <div class="footer">
       <div class="footer_small-grid-box">
-        <ion-icon name="logo-instagram" class="logo-instagram"></ion-icon>
+        <a href="https://www.instagram.com/autobunker.fi" target="_blank"
+          ><ion-icon name="logo-instagram" class="logo-instagram"></ion-icon>
+        </a>
       </div>
       <div class="footer_small-grid-box">
-        <ion-icon name="call" class="sign-phone"></ion-icon>
+        <a href="tel:+358465256617" target="_blank">
+          <ion-icon name="call" class="sign-phone"></ion-icon>
+        </a>
       </div>
       <div class="footer_small-grid-box">
-        <ion-icon name="mail" class="sign-mail"></ion-icon>
+        <a href="mailto:Autobunkerfi@gmail.com" target="_blank">
+          <ion-icon name="mail" class="sign-mail"></ion-icon>
+        </a>
       </div>
       <div class="footer_big-grid-box">
         <span class="footer_copyright">Copyright ©</span>
