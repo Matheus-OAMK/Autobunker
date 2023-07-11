@@ -59,17 +59,13 @@ body::after {
   left: 50%;
   transform: translate(-50%, -50%);
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr;
   text-align: center;
 }
 
 .hero-logo {
-  background-image: url(../img/logo.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   height: 15rem;
-  width: 50rem;
   transform: scale(3);
   -webkit-transform: scale(3);
   z-index: 1;
@@ -295,6 +291,7 @@ body::after {
   top: 0;
   left: 0;
   min-width: 100%;
+  z-index: 9999;
 }
 
 .contacts_header {
