@@ -53,7 +53,7 @@ body::after {
   }
 }
 
-.hero-centre {
+.hero-center {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -513,4 +513,62 @@ iframe {
 .footer_rulers-logo {
   height: 5rem;
   color: #d7ba9c;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 118.75em) {
+  html {
+    font-size: 82.5%;
+  }
+
+  .hero-contacts {
+    right: -1%;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  html {
+    font-size: 72.5%;
+  }
+}
+
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 62em) {
+  html {
+    font-size: 45%;
+  }
+
+  .footer_small-grid-box {
+    margin-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  body {
+    padding: 0;
+  }
+
+  html {
+    font-size: 45%;
+  }
+
+  .hero-contacts {
+    right: -7%;
+  }
+
+  .footer_small-grid-box {
+    margin-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  .hero-slogan {
+    font-size: 2.9rem;
+  }
 }
