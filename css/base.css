@@ -38,6 +38,7 @@ body::after {
   overflow: hidden;
   z-index: 0;
   filter: drop-shadow(rgba(230, 137, 43, 0.4) 0 0 1rem);
+  box-shadow: 0 100px 100px -100px #e6892b;
   border-radius: 0.5rem;
 }
 
@@ -65,7 +66,7 @@ body::after {
 }
 
 .hero-logo {
-  height: 15rem;
+  height: 17.5rem;
   transform: scale(3);
   -webkit-transform: scale(3);
   z-index: 1;
@@ -99,6 +100,7 @@ body::after {
   letter-spacing: 0.7rem;
   text-shadow: black 0 0 1rem;
   z-index: 1;
+  white-space: nowrap;
 }
 
 .hero-services-cta:link,
@@ -144,17 +146,30 @@ body::after {
   text-shadow: rgba(230, 137, 43, 0.9) 0 0 2rem;
 }
 
+.inner-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  min-width: 100%;
+}
+
+.grid-box {
+  display: flex;
+  margin: 0 auto;
+  justify-content: flex-end;
+  max-width: 140rem;
+}
+
 .hero-contacts {
-  font-size: 2.4rem;
+  margin-top: 7rem;
+  margin-right: 5rem;
+  font-size: 2.8rem;
   text-decoration: none;
   color: #d7ba9c;
   font-weight: 400;
-  letter-spacing: 0.3rem;
+  letter-spacing: 2px;
   text-shadow: black 0 0 1rem;
-  position: absolute;
-  top: 5%;
-  right: -3.3%;
-  transform: translate(-50%, -50%);
   z-index: 1;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -163,19 +178,19 @@ body::after {
 .hero-contacts:hover {
   color: #e6892b;
   cursor: pointer;
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: scale(1.1);
   text-shadow: rgba(230, 137, 43, 0.9) 0 0 2rem;
 }
 
 .hero-contacts:active {
-  transform: translate(-50%, -50%) scale(1.05);
+  transform: scale(1.05);
   text-shadow: rgba(230, 137, 43, 0.9) 0 0 2rem;
 }
 
 .services {
   background-repeat: repeat-y;
   margin: 0 auto;
-  margin-top: 5rem;
+  margin-top: 10rem;
   max-width: 140rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -289,7 +304,7 @@ body::after {
 
 .header-box {
   position: fixed;
-  top: 0;
+  top: -1rem;
   left: 0;
   min-width: 100%;
   z-index: 9999;
@@ -316,7 +331,7 @@ body::after {
 }
 
 .contacts_logo--box {
-  height: 15rem;
+  height: 20rem;
 }
 
 .contacts_logo--box img {
@@ -327,7 +342,7 @@ body::after {
 .main-page-link:visited {
   text-decoration: none;
   color: #d7ba9c;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   transition: all 0.3s;
   letter-spacing: 2px;
 }
@@ -462,12 +477,11 @@ iframe {
   margin: 0 auto;
   margin-top: 10rem;
   max-width: 140rem;
-  display: grid;
   margin-bottom: 5rem;
   padding: 0 5rem;
   display: grid;
   grid-template-columns: repeat(3, 0.25fr) 3fr;
-  grid-column-gap: 0px;
+  grid-column-gap: 3rem;
   grid-row-gap: 0px;
 }
 
@@ -480,9 +494,13 @@ iframe {
 .footer_big-grid-box {
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
   flex-direction: column;
-  padding-right: 5%;
+}
+
+.copyright-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo-footer {
@@ -506,36 +524,21 @@ iframe {
 
 .footer_copyright {
   display: inline-block;
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: #e6892b;
 }
 
 .footer_rulers-logo {
-  height: 5rem;
+  height: 3rem;
+  width: min-content;
   color: #d7ba9c;
 }
 
-/* Media Queries */
-
-@media screen and (min-width: 118.75em) {
-  html {
-    font-size: 82.5%;
-  }
-
-  .hero-contacts {
-    right: -1%;
-  }
-}
-
-@media screen and (min-width: 100em) {
-  html {
-    font-size: 72.5%;
-  }
-}
+/* OVERALL QUERIES */
 
 @media screen and (max-width: 75em) {
   html {
-    font-size: 55%;
+    font-size: 56.25%;
   }
 }
 
@@ -543,40 +546,18 @@ iframe {
   html {
     font-size: 50%;
   }
-
-  .footer_small-grid-box {
-    margin-right: 5rem;
-  }
 }
 
 @media screen and (max-width: 37.5em) {
   body {
     padding: 0;
   }
-
-  html {
-    font-size: 45%;
-  }
-
-  .hero-contacts {
-    right: -7%;
-  }
-
-  .footer_small-grid-box {
-    margin-right: 4rem;
-  }
-
-  .hero-logo {
-    height: 20rem;
-  }
 }
 
-@media screen and (max-width: 25em) {
-  .hero-slogan {
-    font-size: 2.9rem;
-  }
+/* FOOTER QUERIES */
 
-  .hero-logo {
-    height: 18rem;
+@media screen and (max-width: 25em) {
+  .footer {
+    padding: 0 2.5rem;
   }
 }

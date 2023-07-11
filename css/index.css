@@ -1,0 +1,29 @@
+@media screen and (max-width: 62em) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  body {
+    padding: 0;
+  }
+  .services {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  .hero-slogan {
+    font-size: 2.9rem;
+  }
+
+  .hero-logo {
+    height: 13rem;
+  }
+
+  .hero-contacts {
+    margin-right: 3rem;
+    margin-top: 6rem;
+  }
+}
