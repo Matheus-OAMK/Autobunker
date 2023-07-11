@@ -1,0 +1,20 @@
+@media (max-width: 40em) {
+  .contacts-social-links {
+    margin-top: 18rem;
+    row-gap: 1.5rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .contacts_header {
+    padding: 0 3rem;
+  }
+
+  .contacts_logo--box {
+    height: 18rem;
+  }
+
+  .social-contact-link {
+    width: 30rem;
+  }
+}
