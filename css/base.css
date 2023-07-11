@@ -16,8 +16,6 @@ body {
   padding: 3rem;
 }
 
-
-
 body::after {
   content: "";
   background-image: url(../img/noise.webp);
@@ -74,10 +72,6 @@ body::after {
   width: 50rem;
   transform: scale(3);
   -webkit-transform: scale(3);
-  /* position: absolute; */
-  /* top: 40%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
   z-index: 1;
   filter: drop-shadow(black 0 0 3rem);
   animation: pulse 5s infinite;
@@ -108,14 +102,12 @@ body::after {
   font-weight: 400;
   letter-spacing: 0.7rem;
   text-shadow: black 0 0 1rem;
-  /* position: absolute; */
-  /* top: 52%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
   z-index: 1;
 }
 
-.hero-services-cta {
+.hero-services-cta:link,
+.hero-services-cta:visited {
+  text-decoration: none;
   font-size: 3.6rem;
   color: #d7ba9c;
   font-weight: 400;
@@ -128,8 +120,6 @@ body::after {
   z-index: 1;
   transition: all 0.3s ease;
 }
-
-
 
 .hero-down-arrow {
   background-image: url(../img/down-arrow.png);
@@ -159,6 +149,7 @@ body::after {
 }
 
 .hero-contacts {
+  text-decoration: none;
   font-size: 2.6rem;
   color: #d7ba9c;
   font-weight: 400;
@@ -191,18 +182,20 @@ body::after {
   max-width: 140rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 3.5rem;
+  grid-row-gap: 8rem;
+  grid-column-gap: 2.5rem;
   justify-items: center;
   padding: 0 2rem;
 }
 
 .card {
+  cursor: pointer;
   -webkit-perspective: 150rem;
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 70rem;
-  width: 40rem;
+  height: 52.5rem;
+  width: 30rem;
 }
 
 .card__side {
@@ -223,6 +216,13 @@ body::after {
   box-shadow: 0 0 2rem #000;
   overflow: hidden;
   padding-bottom: 2rem;
+}
+
+.card__side:hover .flip-icon {
+  transform: scale(1.1);
+}
+.card__side:hover .btn-flip {
+  box-shadow: 0 0 5rem rgba(230, 137, 43, 0.9);
 }
 
 .card__side--front {
@@ -249,7 +249,7 @@ body::after {
 
 .service-name {
   display: inline-block;
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   font-weight: 400;
   letter-spacing: 4px;
   color: #e6892b;
@@ -257,15 +257,15 @@ body::after {
 }
 
 .card__cta {
-  height: 10rem;
   width: 100%;
   display: grid;
   justify-content: center;
 }
 
 .btn-flip {
-  height: 10rem;
-  width: 10rem;
+  transition: all 0.4s;
+  height: 8rem;
+  width: 8rem;
   background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 4rem rgba(230, 137, 43, 0.9);
   border-radius: 100%;
@@ -275,13 +275,14 @@ body::after {
 }
 
 .flip-icon {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   color: #e6892b;
+  transition: all 0.4s;
 }
 
 .subservices-list {
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 300;
   letter-spacing: 4px;
   color: #d7ba9c;
@@ -382,7 +383,6 @@ body::after {
   text-decoration: none;
   font-size: 2rem;
   color: #fff;
-  /* padding: 1.5rem 8rem; */
   width: 35rem;
   padding: 1.2rem 0;
   border-radius: 200px;
@@ -469,7 +469,7 @@ iframe {
   margin-bottom: 10rem;
   padding: 0 5rem;
   display: grid;
-  grid-template-columns: repeat(3, 0.4fr) 3fr;
+  grid-template-columns: repeat(3, 0.25fr) 3fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -489,8 +489,8 @@ iframe {
 }
 
 .logo-instagram {
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 3.5rem;
+  width: 3.5rem;
   color: #d7ba9c;
   transition: all 0.3s ease;
 }
@@ -508,8 +508,8 @@ iframe {
 }
 
 .sign-phone {
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 3.5rem;
+  width: 3.5rem;
   color: #d7ba9c;
   transition: all 0.3s ease;
 }
@@ -527,8 +527,8 @@ iframe {
 }
 
 .sign-mail {
-  height: 4.5rem;
-  width: 4.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   color: #d7ba9c;
   transition: all 0.3s ease;
 }
@@ -547,11 +547,11 @@ iframe {
 
 .footer_copyright {
   display: inline-block;
-  font-size: 3.4rem;
+  font-size: 2.8rem;
   color: #e6892b;
 }
 
 .footer_rulers-logo {
-  height: 6rem;
+  height: 5rem;
   color: #d7ba9c;
 }
