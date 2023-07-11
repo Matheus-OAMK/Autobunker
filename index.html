@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="../img/favicon_64.png" />
-    <link rel="apple-touch-icon" href="../img/apple_touch_icon.png" />
-    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="./img/favicon_64.png" />
+    <link rel="apple-touch-icon" href="./img/apple_touch_icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,23 +23,23 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 
-    <script defer src="../js/index.js"></script>
+    <script defer src="./js/index.js"></script>
     <title>Autobunker</title>
   </head>
 
   <body>
     <div class="inner-header">
       <div class="grid-box">
-        <a href="contacts.html" class="hero-contacts">Yhteystiedot</a>
+        <a href="./contacts.html" class="hero-contacts">Yhteystiedot</a>
       </div>
     </div>
     <header class="hero">
       <div class="hero-center">
         <!-- <div class="hero-logo"></div> -->
-        <img class="hero-logo" src="../img/logo.webp" alt="Autobunker logo" />
+        <img class="hero-logo" src="./img/logo.webp" alt="Autobunker logo" />
         <span class="hero-slogan">LAAJA HUOLTO</span>
       </div>
       <a href="#services" class="hero-services-cta"
@@ -51,7 +51,7 @@
     <section class="services" id="services">
       <template data-card-template>
         <div class="card" onclick="cardRotate(this)">
-          <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(../img/front/card_1.webp)" -->
+          <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/front/card_1.webp)" -->
           <div
             class="card__side card__side--front"
             card-data-front-image
@@ -64,7 +64,7 @@
               </div>
             </div>
           </div>
-          <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(../img/back/card_1.webp)" -->
+          <!-- NOTE: attention to style tag!!! Image of the service is set as a background image, example: style="background-image: url(./img/back/card_1.webp)" -->
           <div
             class="card__side card__side--back"
             card-data-back-image
@@ -84,11 +84,11 @@
 
       <!-- TEST CARD -->
 
-      <div class="card" onclick="cardRotate(this)">
+      <!-- <div class="card" onclick="cardRotate(this)">
         <div
           class="card__side card__side--front"
           card-data-front-image
-          style="background-image: url('../img/front/Jarrujen huolto.webp')"
+          style="background-image: url('./img/front/Jarrujen huolto.webp')"
         >
           <span class="service-name" card-data-service-name
             >Jarrujen huolto</span
@@ -103,7 +103,7 @@
         <div
           class="card__side card__side--back"
           card-data-back-image
-          style="background-image: url('../img/back/Jarrujen huolto.webp')"
+          style="background-image: url('./img/back/Jarrujen huolto.webp')"
         >
           <ul class="subservices-list" card-data-subservices-list>
             <li>subservice name</li>
@@ -121,7 +121,7 @@
         <div
           class="card__side card__side--front"
           card-data-front-image
-          style="background-image: url('../img/front/Jarrujen huolto.webp')"
+          style="background-image: url('./img/front/Jarrujen huolto.webp')"
         >
           <span class="service-name" card-data-service-name
             >Jarrujen huolto</span
@@ -136,7 +136,7 @@
         <div
           class="card__side card__side--back"
           card-data-back-image
-          style="background-image: url('../img/back/Jarrujen huolto.webp')"
+          style="background-image: url('./img/back/Jarrujen huolto.webp')"
         >
           <ul class="subservices-list" card-data-subservices-list>
             <li>subservice name</li>
@@ -154,7 +154,7 @@
         <div
           class="card__side card__side--front"
           card-data-front-image
-          style="background-image: url('../img/front/Jarrujen huolto.webp')"
+          style="background-image: url('./img/front/Jarrujen huolto.webp')"
         >
           <span class="service-name" card-data-service-name
             >Jarrujen huolto</span
@@ -169,7 +169,7 @@
         <div
           class="card__side card__side--back"
           card-data-back-image
-          style="background-image: url('../img/back/Jarrujen huolto.webp')"
+          style="background-image: url('./img/back/Jarrujen huolto.webp')"
         >
           <ul class="subservices-list" card-data-subservices-list>
             <li>subservice name</li>
@@ -187,7 +187,7 @@
         <div
           class="card__side card__side--front"
           card-data-front-image
-          style="background-image: url('../img/front/Jarrujen huolto.webp')"
+          style="background-image: url('./img/front/Jarrujen huolto.webp')"
         >
           <span class="service-name" card-data-service-name
             >Jarrujen huolto</span
@@ -202,7 +202,7 @@
         <div
           class="card__side card__side--back"
           card-data-back-image
-          style="background-image: url('../img/back/Jarrujen huolto.webp')"
+          style="background-image: url('./img/back/Jarrujen huolto.webp')"
         >
           <ul class="subservices-list" card-data-subservices-list>
             <li>subservice name</li>
@@ -220,7 +220,7 @@
         <div
           class="card__side card__side--front"
           card-data-front-image
-          style="background-image: url('../img/front/Jarrujen huolto.webp')"
+          style="background-image: url('./img/front/Jarrujen huolto.webp')"
         >
           <span class="service-name" card-data-service-name
             >Jarrujen huolto</span
@@ -235,7 +235,7 @@
         <div
           class="card__side card__side--back"
           card-data-back-image
-          style="background-image: url('../img/back/Jarrujen huolto.webp')"
+          style="background-image: url('./img/back/Jarrujen huolto.webp')"
         >
           <ul class="subservices-list" card-data-subservices-list>
             <li>subservice name</li>
@@ -253,7 +253,7 @@
         <div
           class="card__side card__side--front"
           card-data-front-image
-          style="background-image: url('../img/front/Jarrujen huolto.webp')"
+          style="background-image: url('./img/front/Jarrujen huolto.webp')"
         >
           <span class="service-name" card-data-service-name
             >Jarrujen huolto</span
@@ -268,7 +268,7 @@
         <div
           class="card__side card__side--back"
           card-data-back-image
-          style="background-image: url('../img/back/Jarrujen huolto.webp')"
+          style="background-image: url('./img/back/Jarrujen huolto.webp')"
         >
           <ul class="subservices-list" card-data-subservices-list>
             <li>subservice name</li>
@@ -281,7 +281,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <div class="footer">
@@ -305,7 +305,7 @@
           <span class="footer_copyright">Copyright ©</span>
           <img
             class="footer_rulers-logo"
-            src="../img/rulers-logo.png"
+            src="./img/rulers-logo.png"
             alt="rulers-logo"
           />
         </div>
