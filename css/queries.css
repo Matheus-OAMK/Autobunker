@@ -1,0 +1,45 @@
+@media (max-width: 53em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 40em) {
+  .contacts-social-links {
+    margin-top: 15rem;
+    row-gap: 1.5rem;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  .footer {
+    grid-column-gap: 1.5rem;
+    margin-bottom: 3rem;
+    margin-top: 8rem;
+  }
+
+  .footer_copyright {
+    font-size: 2.4rem;
+  }
+
+  .footer_rulers-logo {
+    height: 4rem;
+  }
+
+  .logo-footer {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+
+@media (max-width: 25em) {
+
+  .logo-footer {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  
+}

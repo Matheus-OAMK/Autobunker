@@ -159,7 +159,7 @@ body::after {
 }
 
 .hero-contacts {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   color: #d7ba9c;
   font-weight: 400;
   letter-spacing: 0.3rem;
@@ -170,6 +170,7 @@ body::after {
   transform: translate(-50%, -50%);
   z-index: 1;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .hero-contacts:hover {
@@ -450,13 +451,12 @@ body::after {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 10rem;
   padding: 0 5rem;
   row-gap: 1.7rem;
 }
 
 iframe {
-  width: 100%;
+  width: 95%;
   height: 50rem;
   filter: invert(90%) hue-rotate(180deg) brightness(1.1) saturate(1.3);
 }
@@ -466,7 +466,7 @@ iframe {
   margin-top: 10rem;
   max-width: 140rem;
   display: grid;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   padding: 0 5rem;
   display: grid;
   grid-template-columns: repeat(3, 0.4fr) 3fr;
@@ -488,62 +488,25 @@ iframe {
   padding-right: 5%;
 }
 
-.logo-instagram {
+.logo-footer {
   height: 4.5rem;
   width: 4.5rem;
   color: #d7ba9c;
   transition: all 0.3s ease;
 }
 
-.logo-instagram:hover {
+.logo-footer:hover {
   cursor: pointer;
   transform: scale(1.1);
   color: #e6892b;
 }
 
-.logo-instagram:active {
+.logo-footer:active {
   cursor: pointer;
   transform: scale(1.05);
   color: #e6892b;
 }
 
-.sign-phone {
-  height: 4.5rem;
-  width: 4.5rem;
-  color: #d7ba9c;
-  transition: all 0.3s ease;
-}
-
-.sign-phone:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  color: #e6892b;
-}
-
-.sign-phone:active {
-  cursor: pointer;
-  transform: scale(1.05);
-  color: #e6892b;
-}
-
-.sign-mail {
-  height: 4.5rem;
-  width: 4.5rem;
-  color: #d7ba9c;
-  transition: all 0.3s ease;
-}
-
-.sign-mail:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  color: #e6892b;
-}
-
-.sign-mail:active {
-  cursor: pointer;
-  transform: scale(1.05);
-  color: #e6892b;
-}
 
 .footer_copyright {
   display: inline-block;
@@ -555,3 +518,6 @@ iframe {
   height: 6rem;
   color: #d7ba9c;
 }
+
+
+
