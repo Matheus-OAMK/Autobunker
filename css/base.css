@@ -541,7 +541,7 @@ iframe {
 
 @media screen and (max-width: 62em) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
 
   .footer_small-grid-box {
@@ -565,10 +565,18 @@ iframe {
   .footer_small-grid-box {
     margin-right: 4rem;
   }
+
+  .hero-logo {
+    height: 20rem;
+  }
 }
 
 @media screen and (max-width: 25em) {
   .hero-slogan {
     font-size: 2.9rem;
+  }
+
+  .hero-logo {
+    height: 18rem;
   }
 }
