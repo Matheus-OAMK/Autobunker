@@ -485,10 +485,9 @@ iframe {
   padding-right: 5%;
 }
 
-
 .logo-footer {
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 3.5rem;
+  width: 3.5rem;
   color: #d7ba9c;
   transition: all 0.3s ease;
 }
@@ -505,8 +504,6 @@ iframe {
   color: #e6892b;
 }
 
-
-
 .footer_copyright {
   display: inline-block;
   font-size: 2.8rem;
@@ -517,6 +514,3 @@ iframe {
   height: 5rem;
   color: #d7ba9c;
 }
-
-
-
