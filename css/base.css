@@ -38,7 +38,6 @@ body::after {
   overflow: hidden;
   z-index: 0;
   filter: drop-shadow(rgba(230, 137, 43, 0.4) 0 0 1rem);
-  box-shadow: 0 100px 100px -100px #e6892b;
   border-radius: 0.5rem;
 }
 
@@ -67,30 +66,10 @@ body::after {
 
 .hero-logo {
   height: 17.5rem;
-  transform: scale(3);
-  -webkit-transform: scale(3);
+  transform: scale(2.8);
+  -webkit-transform: scale(2.8);
   z-index: 1;
   filter: drop-shadow(black 0 0 3rem);
-  animation: pulse 5s infinite;
-  -webkit-animation: pulse 5s infinite;
-  -moz-animation: pulse 5s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(3);
-    -webkit-transform: scale(3);
-  }
-  50% {
-    transform: scale(3.15);
-    -webkit-transform: scale(3.15);
-    filter: drop-shadow(rgba(230, 137, 43, 0.7) 0 0 3rem);
-    -webkit-filter: drop-shadow(rgba(230, 137, 43, 0.7) 0 0 3rem);
-  }
-  100% {
-    transform: scale(3);
-    -webkit-transform: scale(3);
-  }
 }
 
 .hero-slogan {
@@ -524,12 +503,12 @@ iframe {
 
 .footer_copyright {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #e6892b;
 }
 
 .footer_rulers-logo {
-  height: 3rem;
+  height: 3.5rem;
   color: #d7ba9c;
 }
 
