@@ -288,6 +288,7 @@ body::after {
 }
 
 .contacts_header {
+  height: 20rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -308,7 +309,7 @@ body::after {
 }
 
 .contacts_logo--box {
-  height: 20rem;
+  height: 6rem;
 }
 
 .contacts_logo--box img {
