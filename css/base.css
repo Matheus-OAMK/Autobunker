@@ -41,7 +41,7 @@ body::after {
   border-radius: 0.5rem;
 }
 
-@keyframes scale {
+/* @keyframes scale {
   0% {
     transform: scale(1);
   }
@@ -51,7 +51,7 @@ body::after {
   100% {
     transform: scale(1);
   }
-}
+} */
 
 .hero-center {
   position: absolute;
@@ -66,8 +66,6 @@ body::after {
 
 .hero-logo {
   height: 17.5rem;
-  transform: scale(2.8);
-  -webkit-transform: scale(2.8);
   z-index: 1;
   filter: drop-shadow(black 0 0 3rem);
 }
@@ -278,7 +276,7 @@ body::after {
   letter-spacing: 4px;
   color: #d7ba9c;
   display: grid;
-  row-gap: 1.6rem;
+  row-gap: 0.8rem;
 }
 
 .header-box {
@@ -290,6 +288,7 @@ body::after {
 }
 
 .contacts_header {
+  height: 20rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -310,7 +309,7 @@ body::after {
 }
 
 .contacts_logo--box {
-  height: 20rem;
+  height: 6rem;
 }
 
 .contacts_logo--box img {
