@@ -17,9 +17,9 @@ INSERT INTO services (service)
 VALUES ('Jarrujen huolto'),
        ('Perushuolto'),
        ('Ajovalot'),
-       ('Rengas palvelut'),
+       ('Rengaspalvelut'),
        ('OBD Mittaus'),
-       ('Auton pesu');
+       ('Autopesu');
 
 
 
@@ -38,7 +38,7 @@ INSERT INTO sub_services (service, sub_service)
 SELECT 'Perushuolto', sub_service
 FROM (
   VALUES 
-    ('Mootoriöljyn vaihto'),
+    ('Moottoriöljyn vaihto'),
     ('Öljynsuodattimien vaihto'),
     ('Ilmansuodattimien vaihto'),
     ('Jäähdytysnesteen vaihto'),
@@ -52,14 +52,14 @@ INSERT INTO sub_services (service, sub_service)
 SELECT 'Ajovalot', sub_service
 FROM (
   VALUES 
-    ('Ajovalopolttimojen vaihto'),
+    ('Ajovalopolttimoiden vaihto'),
     ('Lisävalon asennus')
 ) AS sub_service_values (sub_service);
 
 
 
 INSERT INTO sub_services (service, sub_service)
-SELECT 'Rengas palvelut', sub_service
+SELECT 'Rengaspalvelut', sub_service
 FROM (
   VALUES 
     ('Renkaiden vaihto'),
@@ -80,11 +80,11 @@ FROM (
 
 
 INSERT INTO sub_services (service, sub_service)
-SELECT 'Auton pesu', sub_service
+SELECT 'Autopesu', sub_service
 FROM (
   VALUES 
-    ('Auton pesu ulkoa'),
-    ('Auton pesu sisältä')
+    ('Autopesu ulkoa'),
+    ('Autopesu sisältä')
 ) AS sub_service_values (sub_service);
 
 
