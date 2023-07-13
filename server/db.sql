@@ -59,7 +59,7 @@ FROM (
 
 
 INSERT INTO sub_services (service, sub_service)
-SELECT 'Rengas palvelut', sub_service
+SELECT 'Rengaspalvelut', sub_service
 FROM (
   VALUES 
     ('Renkaiden vaihto'),
@@ -80,7 +80,7 @@ FROM (
 
 
 INSERT INTO sub_services (service, sub_service)
-SELECT 'Auton pesu', sub_service
+SELECT 'Autopesu', sub_service
 FROM (
   VALUES 
     ('Autopesu ulkoa'),
