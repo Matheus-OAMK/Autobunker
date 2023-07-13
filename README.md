@@ -26,7 +26,7 @@ You can reach the Autobunker by clicking [here](https://www.autobunker.fi/)
 
 ### UI/UX
 - Figma
-- Squoosh (For image type and size settings)
+- Squoosh (For image optimization)
 - Ionicons (For icons)
 
 
