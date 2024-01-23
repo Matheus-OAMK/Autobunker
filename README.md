@@ -2,7 +2,7 @@
 
 Autobunker is a responsive and dynamic website created for a local mechanic business located in Oulu. The website was designed, implemented and deployed completely from scratch by our team.
 
-You can reach the Autobunker by clicking [here](https://www.autobunker.fi/)
+You can reach the Autobunker by clicking [here](https://autobunker.salute-sir.com/)
 
 ## Tools and resources
 
